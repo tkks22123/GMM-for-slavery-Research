@@ -6,7 +6,7 @@ This repository implements a Gaussian Mixture Model (GMM) using the Expectation-
 2. Synthetic data generation
 3. Model evaluation (BIC, log-likelihood)
 4. Comprehensive visualization tools
-5. Real dataset integration (Iris dataset)
+
 
 ## Key Features
 - **Parameter Estimation**: Automatically estimates weights, means, and covariances
