@@ -47,16 +47,16 @@ gmm.fit(X)
 probabilities = gmm.predict_proba(X)
 labels = gmm.predict(X)
 ```
-##Visualize Results:
+## Visualize Results:
 ```python
 gmm.plot_convergence()
 gmm.plot_results_2d(X)
 ```
-##Generate Samples:
+## Generate Samples:
 ```python
     samples, _ = gmm.sample(n_samples=1000)
 ```
-##Requirements
+## Requirements
 
     Python 3.7+
 
@@ -70,7 +70,7 @@ gmm.plot_results_2d(X)
 
     Seaborn (for visualization)
 
-##Output Examples
+## Output Examples
 
     Convergence Plot:
     https://gmm_plots/convergence.png
