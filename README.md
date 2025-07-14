@@ -1,7 +1,7 @@
 # Gaussian Mixture Model with EM Algorithm
 
 ## Overview
-This repository implements a Gaussian Mixture Model (GMM) using the Expectation-Maximization (EM) algorithm for maximum likelihood estimation. The code includes:
+This repository implements a Gaussian Mixture Model (GMM) using the Expectation-Maximization (EM) algorithm for the modern slavery research. The code includes:
 1. Complete EM algorithm implementation
 2. Synthetic data generation
 3. Model evaluation (BIC, log-likelihood)
