@@ -37,25 +37,25 @@ $$p(x|\theta) = \sum_{k=1}^K \pi_k \mathcal{N}(x|\mu_k, \Sigma_k)$$
 **Initialize Model**:
    ```python
    gmm = GaussianMixtureModel(n_components=3, max_iter=100)
-
+   ```
 ## Fit to Data
 ```python
 gmm.fit(X)
-
+```
 ## Make Predictions:**
 ```python
 probabilities = gmm.predict_proba(X)
 labels = gmm.predict(X)
-
+```
 ##Visualize Results:
 ```python
 gmm.plot_convergence()
 gmm.plot_results_2d(X)
-
+```
 ##Generate Samples:
 ```python
     samples, _ = gmm.sample(n_samples=1000)
-
+```
 ##Requirements
 
     Python 3.7+
