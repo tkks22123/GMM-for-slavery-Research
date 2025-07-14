@@ -42,7 +42,7 @@ $$p(x|\theta) = \sum_{k=1}^K \pi_k \mathcal{N}(x|\mu_k, \Sigma_k)$$
 ```python
 gmm.fit(X)
 ```
-## Make Predictions:**
+## Make Predictions:
 ```python
 probabilities = gmm.predict_proba(X)
 labels = gmm.predict(X)
