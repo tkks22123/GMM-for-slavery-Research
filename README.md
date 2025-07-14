@@ -34,30 +34,26 @@ $$p(x|\theta) = \sum_{k=1}^K \pi_k \mathcal{N}(x|\mu_k, \Sigma_k)$$
    where $N_k = \sum_{n=1}^N \gamma(z_{nk})$
 
 ## Usage
-1. **Initialize Model**:
+**Initialize Model**:
    ```python
    gmm = GaussianMixtureModel(n_components=3, max_iter=100)
 
-2.**Fit to Data**:
+## Fit to Data
 ```python
-
 gmm.fit(X)
 
-3. **Make Predictions:**
+## Make Predictions:**
 ```python
-
 probabilities = gmm.predict_proba(X)
 labels = gmm.predict(X)
 
-4.**Visualize Results:**
+##Visualize Results:
 ```python
-
 gmm.plot_convergence()
 gmm.plot_results_2d(X)
 
-5.**Generate Samples**:
+##Generate Samples:
 ```python
-
     samples, _ = gmm.sample(n_samples=1000)
 
 ##Requirements
