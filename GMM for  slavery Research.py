@@ -330,8 +330,8 @@ def generate_gmm_data(
 
 def load_real_data() -> np.ndarray:
     """Load real dataset for demonstration"""
-    from sklearn.datasets import load_iris
-    data = load_iris()
+    from sklearn.datasets import load_slavery
+    data = load_slavery()
     return data.data[:, :2]  # Use first two features for visualization
 
 # --------------------------
@@ -378,10 +378,10 @@ def main():
     plt.savefig(f"{PLOT_DIR}/generated_samples.png", dpi=300)
     
     # Real data example
-    logger.info("Fitting model to real data (Iris dataset)")
+    logger.info("Fitting model to real data (slavery dataset)")
     gmm_real = GaussianMixtureModel(n_components=3, max_iter=50)
     gmm_real.fit(real_data)
-    gmm_real.plot_results_2d(real_data, f"{PLOT_DIR}/iris_clusters.png")
+    gmm_real.plot_results_2d(real_data, f"{PLOT_DIR}/slavery_clusters.png")
     
     logger.info("Demonstration completed successfully")
 
